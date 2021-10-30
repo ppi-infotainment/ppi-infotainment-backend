@@ -74,7 +74,7 @@ app.get('/editorial/:systemId/full', async (req, res) => {
             metadatas.push({
                 filename: file.name.replace(req.params.systemId + '/', ''),
                 filetype: metadata.contentType,
-                content: 'https://storage.googleapis.com/ppi-infotainment.appspot.com/' + req.params.systemId + '/' + file.name
+                content: 'https://storage.googleapis.com/ppi-infotainment.appspot.com/' + file.name
             });
         } else {
             metadatas.push({
